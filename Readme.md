@@ -18,7 +18,6 @@ Handle the client-side [BeginCallback](https://docs.devexpress.com/AspNet/js-ASP
             <dx:ASPxGridView ID="gridProducts" runat="server" KeyFieldName="Id" ... >
                     <ClientSideEvents EndCallback="OnEndCallback" BeginCallback="OnBeginCallback" />
                 <!-- ... -->
-
             </dx:ASPxGridView>
         </DetailRow>
     </Templates>
