@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="true" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+<%@ Page Language="VB" AutoEventWireup="true" CodeFile="Default.aspx.vb" Inherits="_Default" %>
 
 <%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web" TagPrefix="dx" %>
@@ -11,17 +11,17 @@
     <script type="text/javascript">
         var command = "";
         function OnBeginCallback(s, e) {
-            s.isError = false;
+        	s.isError = false;
             command = e.command;
         }
 
         function OnEndCallback(s, e) {
-            if ((command == "ADDNEWROW" || command == "UPDATEEDIT") && !s.isError) {
+        	if ((command == "ADDNEWROW" || command == "UPDATEEDIT") && !s.isError) {
                 mainGrid.Refresh();
             }
         }
         function OnCallbackError(s, e) {
-            s.isError = true;
+        	s.isError = true;
         }
     </script>
 
@@ -32,7 +32,7 @@
         <dx:ASPxGridView ID="ASPxGridView1" runat="server" KeyFieldName="Id" AutoGenerateColumns="False" ClientInstanceName="mainGrid"
             DataSourceID="mainSource">
             <SettingsDetail ShowDetailRow="true" />
-
+           
             <Columns>
                 <dx:GridViewDataComboBoxColumn FieldName="ProductId" Caption="Product" VisibleIndex="1">
                     <PropertiesComboBox DataSourceID="productSource" TextField="Name" ValueField="Id"
