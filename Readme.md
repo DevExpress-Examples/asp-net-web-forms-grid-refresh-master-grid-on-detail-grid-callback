@@ -1,6 +1,6 @@
 # Grid View for ASP.NET Web Forms - How to refresh a master grid on a detail grid callback
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e3578/)**
+**[[Run Online]](https://codecentral.devexpress.com/128535207/)**
 <!-- run online end -->
 
 This example demonstrates how to use the callback functionality to update the master grid when detail grid data changes.
