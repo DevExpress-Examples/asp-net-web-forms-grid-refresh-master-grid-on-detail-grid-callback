@@ -3,11 +3,11 @@
 **[[Run Online]](https://codecentral.devexpress.com/e3578/)**
 <!-- run online end -->
 
-This example demonstrates how to use the callback functionality to update the master grid when the detail grid data changes.
+This example demonstrates how to use the callback functionality to update the master grid when detail grid data changes.
 
 ## Overview
 
-Handle the client-side [BeginCallback](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.BeginCallback) and [EndCallback](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.EndCallback) events of the detail grid to refresh the master grid control when a callback is finished. Use the `command` argument property to determine the action that initiates a callback.
+Handle the detail grid's client-side [BeginCallback](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.BeginCallback) and [EndCallback](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.EndCallback) events to refresh the master grid control when a callback is finished. Use the `command` argument property to determine the action that initiates that callback.
 
 ```aspx
 <dx:ASPxGridView ID="ASPxGridView1" runat="server" KeyFieldName="Id" ... >
